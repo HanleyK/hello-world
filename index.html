@@ -1,18 +1,86 @@
 <!DOCTYPE html>
-
 <html>
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+	<title>Kaitlyn's Web Page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js">
+
+	</script>
+	<script src="javascript/garnet.js">
+
+	</script>
 </head>
 
 <body>
+	<img src="images/glitchyBlueFlowers.jpg" alt="blue flowers">
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+   <!--nestedMenu-->
+    <nav id="main-nav">
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="pages/myProjects.html">Projects
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="pages/stringThing.html">StringThing</a>
+                    </li>
+                    <li>
+                        <a href="pages/lightning.html">Lightning</a>
+                    </li>
+                    <li>
+                        <a href="pages/dice.html">Dice</a>
+                    </li>
+                    <li>
+                        <a href="pages/chemotaxis.html">Chemotaxis</a>
+                    </li>
+                </ul>
+            </li>
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+            <li>
+                <a href="pages/aboutMe.html">AboutMe
+                    <span class="arrow">&#x25BC;</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="#">CompSci</a>
+                    </li>
+                    <li>
+                        <a href="#">Interests</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="pages/deepThoughts.html">DeepThoughts</a>
+            </li>
+        </ul>
+    </nav>
+  <!--/nestedMenu-->
 
+  <h1> Kaitlyn's Web Page </h1>
+  
+<div>
+
+        <div class="flexbox-container">
+            <div class="flexbox-item flexbox-item-1">Welcome to my Home CS Page! This is the front page of my first somewhat-functioning website. Why somewhat? Just don't try to click too many things at once, and we're in the clear.
+            </div>
+            <div class="flexbox-item flexbox-item-2"> This second box with words in it says that you should check out the bottom of each page for a fun suprise. I tried to draw Garnet from Steven Universe at the bottom of this page, and it looks pretty good if you don't know what she actually looks like. The only page that doesn't have a fun surprise at the moment is the About Me Page, which makes a lot of sense.
+            </div>
+            <div class="flexbox-item flexbox-item-3"> The menu at the top can take you to the About Me Page, the infamous Projects Page, and the Deep Thoughts page,or back here if you get lost. Not sure how you could get lost, but just in case I thought I'd let you know. Can you tell I'm running out of words to describe and explain the home page? If you read all of this and answered 'yes', you should move on to a different page.
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+  <div id="sketch-div"></div>
 </body>
+
 </html>

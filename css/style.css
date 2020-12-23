@@ -1,0 +1,194 @@
+
+
+/*begin menu*/
+#bannerimg {
+    width: 100%;
+    height: 200px;
+    border-style: solid;
+    border-color: rgb(201, 237, 245);   
+}
+#main-nav {
+    margin-top: 2px;
+    margin-right: 35px;
+}
+
+#main-nav a {
+    color: rgb(144,210,220);
+    background:rgb(223,153,163);
+    height: 64px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  
+    font-family: monospace;
+    font-size: 28px;
+    border-style: solid;
+    border-color: rgb(72,0,87);
+}
+
+#main-nav a:hover {
+    background:#ffffff;
+}
+
+#main-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+#main-nav li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#main-nav li:hover .submenu > li {
+    display: block;
+    flex-direction: column;
+    top: 0px;
+}
+
+.submenu li {
+    display: none;
+    position: absolute;
+    top: 0px;
+}
+
+.submenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li:hover .submenu-2 li {
+    display: block;
+}
+
+.submenu-2 li {
+    display: none;
+}
+
+.submenu-2 {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 75%;
+    width: 250px;
+}
+
+.arrow {
+    margin-left: 8px;
+    margin-top: 12px;
+    color: rgb(72,0,87);
+    font-size: 30px;
+}
+
+.box {
+    flex-grow: 2;
+    background: rgb(227, 175, 250);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    /*border: 1px rgb(132, 133, 140);*/
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(223,163,153);
+}
+/*end menu*/
+
+/*page layout with flexbox*/
+
+.flexbox-container {
+    display: flex;
+    border: 5px solid #331640;
+    margin-bottom: 20px;
+    align-content: space-around;
+
+}
+
+.flexbox-item {
+    width: 200px;
+    margin: 5px;
+    padding: 10px;
+    border: 3px solid #333;
+    background-color: #90D2F0;
+}
+
+.flexbox-item-1 {
+    min-height: 200px;
+    background-color: #DFA399;
+    font-family: 'Gabriola', Geneva; 
+    font-size: 24px;
+    flex:1;
+}
+
+.flexbox-item-2 {
+    min-height: 200px;
+    font-family: 'Lucida Console', monospace;
+    align-self: center;
+    flex:1;
+}
+
+.flexbox-item-3 {
+    min-height: 300px;
+    font-family: 'Century Gothic','Optima', Noto;
+    flex:1;
+}
+.another-container {
+    display: flex;
+    border: 5px solid #000000;
+    align-content: space-around;
+    padding: 40px;
+    margin-top: 20px;
+    font-family: Arial;
+    font-size: 28px;
+}
+/*end flexbox*/
+.peggy {
+  justify-content: center;
+  height: 500px;
+  width: 550px;
+}
+
+#myface {
+  width: 450px;
+  height: 670px;
+}
+
+#notebook {
+  margin-left: 475px;
+  padding: 30px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(72,0,87);
+  font-family: italic;
+  font-size: 60px;
+}
+
+body {
+  background-color: rgb(211,89,222);
+}
+
+canvas {
+    padding: 10px;
+    border: solid rgb(223,153,163);
+    margin-left: 2px;
+    margin-right: 6px;
+    margin-top: 20px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 0%);
+    width: 300px;
+    min-height: 400px;
+      z-index: -1;
+}
